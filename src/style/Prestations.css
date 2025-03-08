@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'aoox_fontregular';
+    src: url('../assets/fonts/aoox_font-webfont.woff2') format('woff2'),
+         url('../assets/fonts/aoox_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'aoox_fontregular';
+    padding-top: 70px;
+    font-size: 45px;
+    font-weight: 100;
+    color:#ffffff;
+}
+
+h2, h3, p {
+    font-family: 'aoox_fontregular';
+    font-weight: 100;
+    color:#ffffff;
+}
+
+p {
+    margin-top: -5px;
+}
+
+.grid {
+    display:grid;
+    width: 85%;
+    height: 505px;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 70px auto;
+    column-gap: 80px;
+    color :#ffffff;
+}
+
+.flexboxOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexboxTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.title {
+    grid-column: 1/5;
+}
+
+.steps {
+    grid-column: 1/5;
+}
+
+.stepOne {
+    opacity: 0%;
+    animation: apparition1 1.5s ease-out 0.7s forwards;
+}
+
+.stepTwo {
+    padding-top: 50px;
+    opacity: 0%;
+    animation: apparition2 1.5s ease-out 2s forwards;
+}
+
+.stepThree {
+    padding-top: 100px;
+    opacity: 0%;
+    animation: apparition3 1.5s ease-out 3.3s forwards;
+}
+
+.stepFour {
+    padding-top: 150px;
+    opacity: 0%;
+    animation: apparition4 1.5s ease-out 4.6s forwards;
+    }
+
+    .noAnimation {
+    opacity: 100%;
+    animation-play-state: paused;
+    }
+
+    @keyframes apparition1 {
+        0% {opacity:0}
+        100% {opacity:100%}
+    }
+
+    @keyframes apparition2 {
+        0% {opacity:0}
+        100% {opacity:100%}
+    }
+
+    @keyframes apparition3 {
+        0% {opacity:0}
+        100% {opacity:100%}
+    }
+
+    @keyframes apparition4 {
+        0% {opacity:0}
+        100% {opacity:100%}
+    }
+
+    @media screen and (max-width:1200px) {
+        .grid {
+            width: 92%;
+            column-gap: 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 21px;
+        }
+
+        h3 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+        
+    }
+
+    @media screen and (max-width:900px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 30px 100px 100px;
+            column-gap: 50px;
+            margin-top: 0px;
+        }
+
+        h1 {
+            font-size: 22px;
+            padding-top: 0px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .title {
+            grid-column: 1/3;
+        }
+        
+        .steps {
+            grid-column: 1/3;
+        }
+
+        .stepTwo {
+            padding-top: 0px;
+
+        }
+
+        .stepFour {
+            padding-top: 100px;
+        }
+
+    }
+
+    @media screen and (max-width:500px) {
+
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 30px 70px 80px;
+            column-gap: 20px;
+            margin-top: 0px;
+       
+        }
+
+        h1 {
+            font-size: 18px;
+            padding-top: 0px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+        
+    }
+
+    @media screen and (max-width:380px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20px 60px 60px;
+            column-gap: 40px;
+            margin-top: 0px;      
+        }
+
+        h1 {
+            font-size: 13px;
+            padding-top: 0px;
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 11px;
+        }
+
+        p {
+            font-size: 10px;
+        }    
+    }

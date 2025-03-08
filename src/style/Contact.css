@@ -1,0 +1,187 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+    height: 510px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 1px 1px 30px #ffffff;
+    background-image: linear-gradient(343deg, RGBa(8, 8, 8, 1) 5%, RGBa(8, 8, 8, 1) 20%, RGBa(8, 8, 8, 1) 48%, Rgba(221, 1, 1, 0.6) 83%);
+}
+
+.exit {
+   display: flex;
+   justify-content: flex-end;
+   width: 90%;
+   padding-top: 10px;
+   align-items: center;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -20px;
+    height: auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    margin-top: 17px;
+}
+
+.marginTopChange {
+    margin-top: 12px;
+}
+
+label {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+.field input {
+    width: 100%;
+    height: 20px;
+    box-shadow: 2px 2px 5px rgb(159, 144, 144) inset;
+    border: 1px solid rgb(65, 61, 61);
+    border-radius: 8px;
+}
+
+
+.messageField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    height: 200px;
+}
+
+.messageField textarea {
+    width: 100%;
+    min-height: 130px;
+    height: auto;
+    align-items: center;
+    box-shadow: 2px 2px 7px rgb(159, 144, 144) inset;
+    border: 1px solid rgb(65, 61, 61);
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 40px;
+    padding: 15px 0;
+    background-color:#d72020;
+    color: #ffffff;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 15px;
+    color: yellow;
+}
+
+
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: flex-start;
+    width: 370px;
+    max-width: 370px;
+    height:22%;
+    min-height: 160px;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.messageContainer p {
+    text-align: left;
+    line-height: 26px;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.spinnerContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    height: 10px;
+    background-color: #000000;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -100%;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    animation: bandeau 2.5s infinite;
+}
+
+@keyframes bandeau {
+    0% {margin-left:-100%;}
+    100% {margin-left: 0%;}
+}
+
+@media screen and (max-width:800px) {
+    .contactContainer {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contactContainer {
+        width: 320px;
+    }
+}

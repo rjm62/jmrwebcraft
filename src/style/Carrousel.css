@@ -1,0 +1,364 @@
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 585px;
+    margin: 0 auto;
+}
+
+.carrouselImages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width:775px;
+    height: 520px;
+    box-shadow: 1px 1px 30px #ffffff;
+}
+
+.slideParameters {
+    display: flex;
+    position: absolute;
+}
+
+.imageContainer picture {
+    display: flex;
+    width: 775px;
+    height: 520px;
+    object-fit: fill;
+}
+
+
+.slide0To1 {
+    animation: slide0To1 0.4s ease-out 0s forwards;
+}
+
+.slide1To2 {
+    margin-left:-775px;
+    animation: slide1To2 0.4s ease-out 0s forwards;
+}
+
+.slide2To3 {
+    margin-left:-1550px;
+    animation: slide2To3 0.4s ease-out 0s forwards;
+}
+
+.slide3To2 {
+    margin-left:-2325px;
+    animation: slide3To2 0.4s ease-out 0s forwards;
+}
+
+.slide2To1 {
+    margin-left:-1550px;
+    animation: slide2To1 0.4s ease-out 0s forwards;
+}
+
+.slide1To0 {
+    margin-left:-775px;
+    animation: slid1To0 0.4s ease-out 0s forwards
+}
+
+@keyframes slide0To1 {
+    0% {margin-left:0px}
+    100% {margin-left: -775px}
+}
+
+@keyframes slide1To2 {
+    0% {margin-left:-775px}
+    100% {margin-left: -1550px}
+}
+
+@keyframes slide2To3 {
+    0% {margin-left:-1550px}
+    100% {margin-left: -2325px}
+}
+
+@keyframes slide3To2 {
+    0% {margin-left:-2325px}
+    100% {margin-left:-1550px}
+}
+
+@keyframes slide2To1 {
+    0% {margin-left:-1550px}
+    100% {margin-left:-775px}
+}
+
+@keyframes slid1To0 {
+    0% {margin-left:-775px}
+    100% {margin-left:-0px}
+}
+
+.desktopChevron {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.desktopChevron i {
+    font-size: 80px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mobileChevron {
+    display: none;
+   justify-content: center;
+   align-items: center;
+    width: 70px;
+    height: 30px;
+}
+
+.mobileChevron i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.carrousel p {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.indicatorButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9px;
+    height: 9px;
+    background-color: #000000;
+    border: 4px solid #ffffff;
+    border-radius: 100%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.BlackColor {
+    background-color: #ffffff;
+    border: 4px, solid #ffffff
+
+}
+
+@media screen and (max-width:1024px) {   
+    .imageContainer {
+        width:600px;
+        height: 408px;
+    }
+
+    .imageContainer picture {
+        width: 600px;
+        height: 408px;
+    }
+
+    .desktopChevron i {
+        font-size: 60px;
+    }
+   
+    .slide1To2 {
+        margin-left:-600px;
+    }
+    
+    .slide2To3 {
+        margin-left:-1200px;
+    }
+    
+    .slide3To2 {
+        margin-left:-1800px;
+    }
+    
+    .slide2To1 {
+        margin-left:-1200px;
+    }
+    
+    .slide1To0 {
+        margin-left:-600px;
+    }
+    
+    @keyframes slide0To1 {
+        0% {margin-left:0px}
+        100% {margin-left: -600px}
+    }
+    
+    @keyframes slide1To2 {
+        0% {margin-left:-600px}
+        100% {margin-left: -1200px}
+    }
+    
+    @keyframes slide2To3 {
+        0% {margin-left:-1200px}
+        100% {margin-left: -1800px}
+    }
+    
+    @keyframes slide3To2 {
+        0% {margin-left:-1800px}
+        100% {margin-left:-1200px}
+    }
+    
+    @keyframes slide2To1 {
+        0% {margin-left:-1200px}
+        100% {margin-left:-600px}
+    }
+    
+    @keyframes slid1To0 {
+        0% {margin-left:-600px}
+        100% {margin-left:-0px}
+    }
+}
+
+@media screen and (max-width:750px) {
+    .imageContainer {
+        width:500px;
+        height:339px;
+    }
+
+    .imageContainer picture {
+        width: 500px;
+        height: 339px;
+    }
+
+    .desktopChevron {
+        display: none;
+    }
+
+    .mobileChevron {
+        display: flex;
+    }
+
+    .slide1To2 {
+        margin-left:-500px;
+    }
+    
+    .slide2To3 {
+        margin-left:-1000px;
+    }
+    
+    .slide3To2 {
+        margin-left:-1500px;
+    }
+    
+    .slide2To1 {
+        margin-left:-1000px;
+    }
+    
+    .slide1To0 {
+        margin-left:-500px;
+    }
+    
+    @keyframes slide0To1 {
+        0% {margin-left:0px}
+        100% {margin-left: -500px}
+    }
+    
+    @keyframes slide1To2 {
+        0% {margin-left:-600px}
+        100% {margin-left: -1000px}
+    }
+    
+    @keyframes slide2To3 {
+        0% {margin-left:-1000px}
+        100% {margin-left: -1500px}
+    }
+    
+    @keyframes slide3To2 {
+        0% {margin-left:-1500px}
+        100% {margin-left:-1000px}
+    }
+    
+    @keyframes slide2To1 {
+        0% {margin-left:-1000px}
+        100% {margin-left:-500px}
+    }
+    
+    @keyframes slid1To0 {
+        0% {margin-left:-500px}
+        100% {margin-left:-0px}
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .imageContainer {
+        width:300px;
+        height:204px;
+    }
+
+    .imageContainer picture {
+        display: flex;
+        width: 300px;
+        height: 204px;
+        object-fit: fill;
+    }
+
+    .slide1To2 {
+        margin-left:-300px;
+    }
+    
+    .slide2To3 {
+        margin-left:-600px;
+    }
+    
+    .slide3To2 {
+        margin-left:-900px;
+    }
+    
+    .slide2To1 {
+        margin-left:-600px;
+    }
+    
+    .slide1To0 {
+        margin-left:-300px;
+    }
+    
+    @keyframes slide0To1 {
+        0% {margin-left:0px}
+        100% {margin-left: -300px}
+    }
+    
+    @keyframes slide1To2 {
+        0% {margin-left:-300px}
+        100% {margin-left: -600px}
+    }
+    
+    @keyframes slide2To3 {
+        0% {margin-left:-600px}
+        100% {margin-left: -900px}
+    }
+    
+    @keyframes slide3To2 {
+        0% {margin-left:-900px}
+        100% {margin-left:-600px}
+    }
+    
+    @keyframes slide2To1 {
+        0% {margin-left:-600px}
+        100% {margin-left:-300px}
+    }
+    
+    @keyframes slid1To0 {
+        0% {margin-left:-300px}
+        100% {margin-left:-0px}
+    }
+}
