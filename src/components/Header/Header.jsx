@@ -40,6 +40,12 @@ function Header() {
             seenAnimation===true ? setAnimation(false) : ""
             return;
 
+        case "footerSelection" :
+            setRealisationsChoosen("headerLink lineOff")
+            setPrestationsChoosen("headerLink lineOff")
+            setContactChoosen("headerLink lineOff")
+
+
         default :
             return;
        }

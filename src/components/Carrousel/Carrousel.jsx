@@ -17,6 +17,31 @@ function Carrousel() {
     const [rightChevron, setRightChevron] = useState("fa-solid fa-chevron-right")
     const [startX, setStartX] = useState(0)
 
+    const indicatorSelection = (e) => {
+        if(selection-e>0) {
+            setSlide(previousArray[e])
+            }
+        if(selection-e<0) {
+            setSlide(nextArray[e])
+            }
+            setSelection(e)
+
+        if(e==0) {
+            setLeftChevron("")
+            setRightChevron("fa-solid fa-chevron-right")
+            }
+
+        if(e==slides.length-1) {
+            setLeftChevron("fa-solid fa-chevron-left")
+            setRightChevron("") 
+        }
+
+        if(e!=0 && e!slides.length-1) {
+            setLeftChevron("fa-solid fa-chevron-left")
+            setRightChevron("fa-solid fa-chevron-right") 
+        }
+    }
+
     const previous = (e) => {
         e.preventDefault()
         if(selection>0) { 
@@ -98,7 +123,7 @@ function Carrousel() {
                 </div>  
                 {slides.map((_,id) => {
                     return (
-                        <div className={selection=== id ? 'indicatorButton' : 'indicatorButton BlackColor'} key={id} onClick={() => setSelection(id)}></div>
+                        <div className={selection=== id ? 'indicatorButton' : 'indicatorButton BlackColor'} key={id} onClick={(e) =>indicatorSelection(id)} ></div>
                         )
                  })}
                 <div className="mobileChevron">

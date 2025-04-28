@@ -2,6 +2,5 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(158deg, RGBa(0, 0, 0, 1) 5%, RGBa(0, 0, 0, 1) 40%, RGBa(0, 0, 0, 0.95) 45%, Rgba(255, 0, 0, 1) 83%);
   background-image: linear-gradient(162deg, RGBa(8, 8, 8, 1) 5%, RGBa(8, 8, 8, 1) 40%, RGBa(8, 8, 8, 1) 48%, Rgba(221, 1, 1, 1) 83%);
 }

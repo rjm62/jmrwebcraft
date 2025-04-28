@@ -6,13 +6,15 @@ import  '../../style/PolitiqueDeConfidentialite.css'
 function PolitiqueDeConfidentialite() {
     const {contactButton, setContactButton} = useContext(DataContext)
     const {isContactOpen, setIsContactOpen} = useContext(DataContext)
+    const {pageChoosen, setPageChoosen} = useContext(DataContext)
     const [isContactAllowed, setIsContactAllowed] = useState(false)
     const [display, setDisplay] = useState("OFF")
 
     useEffect(() => {
+        setPageChoosen("footerSelection")
         isContactOpen && isContactAllowed === true ? setDisplay("ON") : setDisplay("OFF")
         setIsContactAllowed(true)
-    }, [contactButton]) 
+    }, [contactButton, pageChoosen]) 
 
     return (
         <section className='politiqueDeConfidentialiteContainer'>

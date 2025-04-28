@@ -98,7 +98,7 @@ function Contact() {
                        },
                        (error) => {
                          console.log('FAILED...', error.text);
-                         setSendMessage("Désolé un problème dans l'envoi est survenu, veuillez réessayer ou envoyer un mail à: co.tmf.pro@gmail.com.");
+                         setSendMessage("Désolé un problème dans l'envoi est survenu, veuillez réessayer ou envoyer un mail à: jmrwebcraft@gmail.com");
                          setSpinner(false)
                        },
                      );
