@@ -36,7 +36,7 @@ function Carrousel() {
             setRightChevron("") 
         }
 
-        if(e!=0 && e!slides.length-1) {
+        if(e!=0 && e!=slides.length-1) {
             setLeftChevron("fa-solid fa-chevron-left")
             setRightChevron("fa-solid fa-chevron-right") 
         }
