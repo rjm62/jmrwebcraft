@@ -2,22 +2,22 @@
     "slides": [
         {
             "id": "1",
-            "src": "../../src/assets/images/zenapie.png",
+            "src": "../../src/assets/images/zenapie.webp",
             "alt": "photo du site zénapie"
         },
         {
             "id": "2",
-            "src": "../../src/assets/images/cotmf.png",
+            "src": "../../src/assets/images/cotmf.webp",
             "alt": "photo du site cotmf"
         },
         {
             "id": "3",
-            "src": "../../src/assets/images/gameOn.png",
+            "src": "../../src/assets/images/gameOn.webp",
             "alt": "photo du site gameOn"
         },
         {
             "id": "4",
-            "src": "../../src/assets/images/lesPetitsPlats2.png",
+            "src": "../../src/assets/images/lesPetitsPlats2.webp",
             "alt": "photo du site les petis plats"
         }
     ]

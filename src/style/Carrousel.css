@@ -299,66 +299,135 @@
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
     .imageContainer {
-        width:300px;
-        height:204px;
+        width:450px;
+        height:310px;
+    }
+
+    .carrouselImages {
+        margin-top: -150px;
     }
 
     .imageContainer picture {
         display: flex;
-        width: 300px;
-        height: 204px;
+        width: 450px;
+        height: 310px;
         object-fit: fill;
     }
 
     .slide1To2 {
-        margin-left:-300px;
+        margin-left:-450px;
     }
     
     .slide2To3 {
-        margin-left:-600px;
-    }
-    
-    .slide3To2 {
         margin-left:-900px;
     }
     
+    .slide3To2 {
+        margin-left:-1350px;
+    }
+    
     .slide2To1 {
-        margin-left:-600px;
+        margin-left:-900px;
     }
     
     .slide1To0 {
-        margin-left:-300px;
+        margin-left:-450px;
     }
     
     @keyframes slide0To1 {
         0% {margin-left:0px}
-        100% {margin-left: -300px}
+        100% {margin-left: -450px}
     }
     
     @keyframes slide1To2 {
-        0% {margin-left:-300px}
-        100% {margin-left: -600px}
-    }
-    
-    @keyframes slide2To3 {
-        0% {margin-left:-600px}
+        0% {margin-left:-450px}
         100% {margin-left: -900px}
     }
     
-    @keyframes slide3To2 {
+    @keyframes slide2To3 {
         0% {margin-left:-900px}
-        100% {margin-left:-600px}
+        100% {margin-left: -1350px}
+    }
+    
+    @keyframes slide3To2 {
+        0% {margin-left:-1350px}
+        100% {margin-left:-900px}
     }
     
     @keyframes slide2To1 {
-        0% {margin-left:-600px}
-        100% {margin-left:-300px}
+        0% {margin-left:-900px}
+        100% {margin-left:-450px}
     }
     
     @keyframes slid1To0 {
-        0% {margin-left:-300px}
+        0% {margin-left:-450px}
         100% {margin-left:-0px}
     }
 }
+
+@media screen and (max-width: 450px) {
+    .imageContainer {
+        width:330px;
+        height:310px;
+    }
+
+    .imageContainer picture {
+        display: flex;
+        width: 330px;
+        height: 224px;
+        object-fit: fill;
+    }
+
+    .slide1To2 {
+        margin-left:-330px;
+    }
+    
+    .slide2To3 {
+        margin-left:-660px;
+    }
+    
+    .slide3To2 {
+        margin-left:-990px;
+    }
+    
+    .slide2To1 {
+        margin-left:-660px;
+    }
+    
+    .slide1To0 {
+        margin-left:-330px;
+    }
+    
+    @keyframes slide0To1 {
+        0% {margin-left:0px}
+        100% {margin-left: -330px}
+    }
+    
+    @keyframes slide1To2 {
+        0% {margin-left:-330px}
+        100% {margin-left: -660px}
+    }
+    
+    @keyframes slide2To3 {
+        0% {margin-left:-660px}
+        100% {margin-left: -990px}
+    }
+    
+    @keyframes slide3To2 {
+        0% {margin-left:-990px}
+        100% {margin-left:-660px}
+    }
+    
+    @keyframes slide2To1 {
+        0% {margin-left:-660px}
+        100% {margin-left:-330px}
+    }
+    
+    @keyframes slid1To0 {
+        0% {margin-left:-330px}
+        100% {margin-left:-0px}
+    }
+}
+
